@@ -17,8 +17,6 @@ const MainPage = (props) => {
     let setPageSize = (event) => {
         let pageSize = event.target.value
         props.setPageSize(pageSize)
-        console.log(props.state.pageSize);
-        console.log(pageSize);
         if (pageSize === props.state.pageSize) { }
         else { props.getPokemons(pageSize) }
     }
@@ -27,8 +25,6 @@ const MainPage = (props) => {
         let type = e.target.value
         props.setType(type)
         props.getPokemonsByType(type)
-        console.log(type);
-        console.log(props.state.type);
     }
 
     return (
@@ -49,7 +45,7 @@ const MainPage = (props) => {
                 </span>
             </div>
             <div className={s.setTypeBlock}>
-                <button value={'physical'} className={s.butTypes} onClick={setPType}>physical</button>
+                <button value={'fighting'} className={s.butTypes} onClick={setPType}>fighting</button>
                 <button value={'ice'} className={s.butTypes} onClick={setPType}>ice</button>
                 <button value={'dark'} className={s.butTypes} onClick={setPType}>dark</button>
                 <button value={'ground'} className={s.butTypes} onClick={setPType}>ground</button>

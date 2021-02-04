@@ -14,11 +14,14 @@
     margin: 10px 0px 10px 0px
 }
 .butTypes {
-    background-color: rgb(86, 9, 158);
-    color: chartreuse;
+    background-color: rgb(32, 133, 7);
+    color: rgb(255, 255, 255);
     height: 30px;
     width: 100px;
     font-size: 19px;
+    margin: 15px 5px 5px 5px;
+    border: 1px solid white ;
+    border-radius: 10%;
     
 }
 .inotherPageText {
