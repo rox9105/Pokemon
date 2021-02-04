@@ -24,7 +24,8 @@ const MainPage = (props) => {
         debugger
         let type = e.target.value
         props.setType(type)
-        props.getPokemonsByType(type)
+        if (type === '') {props.getPokemons()}
+        else { props.getPokemonsByType(type) }
     }
 
     return (
@@ -45,11 +46,18 @@ const MainPage = (props) => {
                 </span>
             </div>
             <div className={s.setTypeBlock}>
-                <button value={'fighting'} className={s.butTypes} onClick={setPType}>fighting</button>
-                <button value={'ice'} className={s.butTypes} onClick={setPType}>ice</button>
-                <button value={'dark'} className={s.butTypes} onClick={setPType}>dark</button>
-                <button value={'ground'} className={s.butTypes} onClick={setPType}>ground</button>
-                <button value={'ghost'} className={s.butTypes} onClick={setPType}>ghost</button>
+                <span className={s.searchTypeText}>Search By Type : </span>
+                <select className={s.selectType} onChange={setPType}>
+                    <option className={s.optionTypeAll} value='' >All Types</option>
+                    <option className={s.optionTypeFighting} value={'fighting'}>Fighting</option>
+                    <option className={s.optionTypeIce} value={'ice'}>Ice</option>
+                    <option className={s.optionTypeDark} value={'dark'}>Dark</option>
+                    <option className={s.optionTypeGround} value={'ground'}>Ground</option>
+                    <option className={s.optionTypeGhost} value={'ghost'}>Ghost</option>
+                    <option className={s.optionTypeDragon} value={'dragon'}>Dragon</option>
+                    <option className={s.optionTypeRock} value={'rock'}>Rock</option>
+                    <option className={s.optionTypeSteel} value={'steel'}>Steel</option>
+                </select>
             </div>
             <div className={s.pokemonsBlock}>
                 {props.pokemons.map(el =>

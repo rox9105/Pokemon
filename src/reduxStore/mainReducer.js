@@ -93,10 +93,9 @@ export const getPokemonsByType = (type = initialState.type) => {
             const array = await response.data.pokemon
             Promise.all(array.map(async pokemon => {
                 const result = await getPokemonInfo(pokemon.pokemon)
-                pokemons.push(result)                
-            })).then ( () => {
+                pokemons.push(result)
                 dispatch(setPokemons(pokemons))
-            })
+            }))
         } catch (error) {
             throw new Error('getting pokemons went wrong')
         }

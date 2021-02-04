@@ -1,10 +1,10 @@
 .mainBlock {
-    background-color: rgb(80, 112, 255);
-    border-bottom: rgb(163, 185, 34) 3px solid;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EJgZG_IZCozOM71_RzVYYfBq8xhomAOuyw&usqp=CAU') ;
+    border-bottom: rgb(221, 177, 0) 3px solid;
     text-align: center;
 }
 .headerName {
-    color:rgb(255, 187, 0);
+    color:rgb(255, 177, 0);
     text-align: center;
     font-size: 40px;
     font-weight: 600;

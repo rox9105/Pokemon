@@ -13,17 +13,56 @@
     text-align: center;
     margin: 10px 0px 10px 0px
 }
-.butTypes {
-    background-color: rgb(32, 133, 7);
-    color: rgb(255, 255, 255);
-    height: 30px;
-    width: 100px;
+.searchTypeText {
+    font-size: 20px;
+    color:rgb(92, 99, 0);
+    opacity: 1;
+}
+.selectType {
+    background-color: rgb(62, 80, 57);
+    color: rgb(204, 204, 204);
+    height: 40px;
+    width: 150px;
     font-size: 19px;
     margin: 15px 5px 5px 5px;
     border: 1px solid white ;
     border-radius: 10%;
-    
+    opacity: 0.9;
 }
+    .selectType:hover {
+        background-color: rgb(62, 80, 57);
+        color: rgb(255, 255, 254);
+        border: 1px solid white ;
+        opacity: 1;
+    }
+.optionTypeAll {
+    color:rgb(255, 255, 254);
+}
+.optionTypeFighting {
+    color:rgb(253, 46, 46);
+}
+.optionTypeIce {
+    color:rgb(162, 230, 226);
+}
+.optionTypeDark {
+    color:rgb(3, 3, 3);
+}
+.optionTypeGround {
+    color:rgb(59, 55, 11);
+}
+.optionTypeGhost {
+    color:rgb(83, 0, 131);
+}
+.optionTypeDragon {
+    color:rgb(40, 0, 185);
+}
+.optionTypeRock {
+    color:rgb(110, 110, 110);
+}
+.optionTypeSteel {
+    color:rgb(204, 204, 165);
+}
+
 .inotherPageText {
     font-size: 20px;
     color:rgb(92, 99, 10);
@@ -36,7 +75,7 @@
 }
 .pokAtMomentNumber {
     font-size: 30px;
-    color: rgb(2, 102, 160);
+    color: rgb(65, 103, 207);
     font-weight: 600;
     margin-left: 5px;
 }
@@ -51,7 +90,7 @@
     opacity: 0.8;
 }
     .changePageButtons:hover {
-        background-color: rgb(15, 131, 0);
+        background-color: rgb(12, 104, 0);
         color: rgb(255, 238, 0);
         opacity: 1;
         border: 1px solid rgb(255, 255, 255);
@@ -76,7 +115,7 @@
     opacity: 0.8;
 }
     .changeSizeButtons:hover {
-        background-color: rgb(14, 119, 0);
+        background-color: rgb(11, 88, 1);
         color: rgb(255, 251, 0);
         opacity: 1;
         border: 1px solid rgb(255, 255, 255);
@@ -90,7 +129,7 @@
 .loadedPokemonsBlock {
     display: inline-block;
     text-align: center;
-    background-color: rgb(28, 69, 102);
+    background-image: url('https://img.freepik.com/free-photo/room-with-concrete-floor-and-smoke-background_9083-2991.jpg?size=626&ext=jpg');
     margin: 2%;
     width: 16%;
     height: 40vh;
@@ -99,9 +138,9 @@
     opacity: 0.85;
 }
     .loadedPokemonsBlock:hover {
-        background-color: rgb(90, 59, 0);
+        background-image: url('https://newcastlebeach.org/images/background-image-css-7.jpg');
         border-radius: 17%;
-        box-shadow: 1px 1px 50px 20px rgb(0, 255, 221);
+        box-shadow: 1px 1px 50px 20px rgb(83, 223, 204);
         opacity: 1;
 
     }
@@ -129,11 +168,11 @@
 }
 .pTypes {
     display: inline-block;
-    background-color: rgb(46, 126, 38);
-    color: rgb(255, 255, 255);
+    background-color: rgb(202, 204, 93);
+    color: rgb(0, 81, 255);
     margin: 5px 8px 11px 15px;
     font-size: 20px;
-    height: 10%;
+    height: 9%;
     width: 30%;
     border-radius: 25%;
 }
