@@ -1,0 +1,136 @@
+.mainBlock {
+    height: 100%;
+}
+.changePageBlock {
+    text-align: center;
+    margin: 10px 10.9% 0px 10px;
+}
+.changePageSizeBlock {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+.setTypeBlock {
+    text-align: center;
+    margin: 10px 0px 10px 0px
+}
+.butTypes {
+    background-color: rgb(86, 9, 158);
+    color: chartreuse;
+    height: 30px;
+    width: 100px;
+    font-size: 19px;
+    
+}
+.inotherPageText {
+    font-size: 20px;
+    color:rgb(92, 99, 10);
+    opacity: 0.9;
+}
+.pokAtMomentText {
+    font-size: 20px;
+    color:rgb(92, 99, 0);
+    opacity: 0.9;
+}
+.pokAtMomentNumber {
+    font-size: 30px;
+    color: rgb(2, 102, 160);
+    font-weight: 600;
+    margin-left: 5px;
+}
+.changePageButtons {
+    margin: 10px 20px 0px 20px;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(168, 168, 168);
+    color: honeydew;
+    border-radius: 12%;
+    opacity: 0.8;
+}
+    .changePageButtons:hover {
+        background-color: rgb(15, 131, 0);
+        color: rgb(255, 238, 0);
+        opacity: 1;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .changePageButtons:active {
+        background-color: rgb(110, 166, 238);
+        color: rgb(119, 45, 45);
+        opacity: 0.5;
+    }
+.changePageSizeBlock {
+    text-align: center;
+}
+.changeSizeButtons {
+    padding: 1px 2px 1px 1px;
+    margin: 20px 10px 5px 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background-color: dimgrey;
+    color: rgb(187, 187, 187);
+    border-radius: 10%;
+    opacity: 0.8;
+}
+    .changeSizeButtons:hover {
+        background-color: rgb(14, 119, 0);
+        color: rgb(255, 251, 0);
+        opacity: 1;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .changeSizeButtons:active {
+        background-color: rgb(110, 166, 238);
+        color: rgb(119, 45, 45);
+        opacity: 0.5;
+    }
+
+.loadedPokemonsBlock {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(28, 69, 102);
+    margin: 2%;
+    width: 16%;
+    height: 40vh;
+    border-radius: 15%;
+    box-shadow: 1px 1px 10px 10px white;
+    opacity: 0.85;
+}
+    .loadedPokemonsBlock:hover {
+        background-color: rgb(90, 59, 0);
+        border-radius: 17%;
+        box-shadow: 1px 1px 50px 20px rgb(0, 255, 221);
+        opacity: 1;
+
+    }
+.pIcon {
+    height: 55%;
+    width: 70%;
+}
+.pokemonsInfoValues {
+    margin: 1px;
+}
+.pokemonsStats1 {
+    color: rgb(223, 173, 35);
+}
+.pokemonsStats2 {
+    color:rgb(185, 110, 20);
+    margin-top: 1px;
+}
+.pokemonsStats3 {
+    color:rgb(155, 100, 20);
+    margin-top: 1px;
+}
+.pokemonsStats4 {
+    color:rgb(122, 100, 20);
+    margin-top: 1px;
+}
+.pTypes {
+    display: inline-block;
+    background-color: rgb(46, 126, 38);
+    color: rgb(255, 255, 255);
+    margin: 5px 8px 11px 15px;
+    font-size: 20px;
+    height: 10%;
+    width: 30%;
+    border-radius: 25%;
+}
