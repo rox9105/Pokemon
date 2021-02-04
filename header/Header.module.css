@@ -1,0 +1,18 @@
+.mainBlock {
+    background-color: rgb(80, 112, 255);
+    border-bottom: rgb(163, 185, 34) 3px solid;
+    text-align: center;
+}
+.headerName {
+    color:rgb(255, 187, 0);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px;
+}
+.headerName:hover {
+    color:rgb(204, 27, 27);
+}
+a {
+    text-decoration: none;
+}
