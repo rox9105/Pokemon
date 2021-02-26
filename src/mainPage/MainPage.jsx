@@ -142,6 +142,7 @@ const MainPage = (props) => {
         setSliceBegin(0)
         setSliceEnd(5)
         props.getPokemons(props.pageSize)
+        funcDisableTimer()
     }
     let currentPage = props.state.currentPage
 
@@ -149,7 +150,8 @@ const MainPage = (props) => {
         <div className={s.contentMainBlock}>
             <div className={s.paginationBlock}>
                 <span className={s.inotherPageText}>Go to inother page : </span>
-                <button disabled={+props.currentPage === 1 ? true : false || isDisabled}
+                <button disabled={+props.currentPage === 1 
+                || props.state.previousPage === null ? true : false || isDisabled}
                     className={s.pageBtnsFirstLast} onClick={goToFirstPage}>first</button>
                 <button disabled={props.state.previousPage === null
                     || props.type !== '' ? true : false || isDisabled}
@@ -190,7 +192,8 @@ const MainPage = (props) => {
                     <input className={s.inputSearch} placeholder={'minimum two letters...'}
                         onChange={setValueForSearching} value={props.textToSearch} />
                     <button onClick={searchPokemons} className={s.buttonSearch}>Search</button>
-                    <button onClick={reloadPage} className={s.buttonReload}>Reload</button>
+                    <button onClick={reloadPage} className={s.buttonReload}
+                    disabled={isDisabled}>Reload</button>
                 </div>
                 <div className={s.searchByTypeBlock} style={{ display: 'inline' }}>
                     <span className={s.searchByTypeText}>Search By Type : </span>

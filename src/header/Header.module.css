@@ -1,7 +1,7 @@
 .mainBlock {
     background-image: url(../assets/headerBackground.bmp);
     background-size: 25em;
-    border-bottom: rgb(221, 177, 0) 0.1em solid;
+    border-bottom: rgb(126, 151, 175) 0.1em solid;
     text-align: center;
 }
 .headerName {
@@ -12,7 +12,7 @@
     padding: 0.15em;
 }
 .headerName:hover {
-    color:rgb(204, 27, 27);
+    color:rgb(0, 255, 221);
 }
 .headerName:active {
     color:rgb(46, 196, 26);
