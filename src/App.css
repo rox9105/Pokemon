@@ -7,9 +7,12 @@
     grid-template-areas:
     " h "
     " c ";
-    grid-template-rows: 70px 100%;
+    grid-template-rows: 3.5em 100%;
 }  
 .app-wrapper-content {
   grid-area: c;
-  background-color: rgb(32, 32, 32);
+  /* background-color: rgb(32, 32, 32);
+  background-image: url(./assets/bgMainPageDARK.bmp);
+  background-image: url(./assets/bgMainPageX.bmp);
+  background-image: url(./assets/bgMainPageDarkBlue.bmp); */
   }

@@ -1,63 +1,87 @@
 .mainBlock {
     display: block;
     text-align: center;
-    height: 657.5px;
-    width: 50%;
-    margin: 5% 5% 3.25% 25%;
-    background-image: url('https://i.pinimg.com/originals/88/1e/97/881e975af06ff67857544c7b64e65cbc.gif');
+    height: 100%;
+    width: 70%;
+    margin: 3% 0% 0% 15%;
+    background-image: url(../../assets/bgGifPokInfo.gif);
+    background-size: 120% 160%;
+    background-position-x: 10em;
+    background-position-y: -5vw;
     border-radius: 2%;
-    box-shadow: 1px 12px 100px 70px #c4f000;
-    opacity: 0.9;
+    box-shadow: 0px 0px 5em 2em #c4f000;
+    opacity: 0.95;
 }
 .pIcon {
-    height: 15%;
-    width: 30%;
+    height: 10%;
+    width: 26%;
 }
 .pokemonsInfoValues {
-    margin: 0px;
     color: rgb(7, 138, 35);
 }
 .pokemonsStats1 {
     color: rgb(133, 133, 133);
-    font-size: 30px;
+    font-size: 1.6em;
 }
 .pokemonName {
     color: rgb(250, 246, 0);
-    font-size: 55px;
+    font-size: 2em;
 }
 .pokemonsStats1.span {
     color: slateblue;
 }
 .pokemonsStats2 {
     color:rgb(255, 255, 255);
-    margin-top: 1px;
+    margin-top: 0.1em;
+    font-size: 1em;
 }
 .pokemonsStats3 {
     color:rgb(255, 220, 0);
-    margin-top: 1px;
+    margin-top: 0.1vw;
+    font-size: 1em;
 }
 .pokemonsStats4 {
     color:rgba(255, 160, 0);
-    margin-top: 1px;
+    margin-top: 0.1vw;
+    font-size: 1em;
 }
 .pTypes {
     display: inline-block;
-    background-color: rgb(165, 207, 49);
-    color: rgb(38, 3, 233);
-    margin: 1px 15px 1px 15px;
+    background-image: url(../../assets/backgroundType.bpm);
+    background-size: 2.7em;
+    color: rgb(0, 213, 228);
+    margin:  0.2em 1em 0em 1em;
+    padding: 0em 0em 0em 0em;
     padding-top: 0px;
-    font-size: 25px;
-    height: 40px;
-    width: 20%;
+    font-size: 1.5em;
+    height: 1.6em;
+    width: 5.5em;
     border-radius: 20%;
 
 }
 .wordStats{
-    font-size: 30px;
+    font-size: 1.3em;
     color: rgb(148, 88, 88);
-    padding-right: 27%;
+    padding-right: 5vw;
 }
 .mainStats {
     color: rgb(117, 180, 53);
-    font-size: 20px;
+    font-size: 1em;
+}
+.statsVal {
+    color: blue;
+}
+.ifPageReloaded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    color: rgb(207, 102, 40);
+    font-size: 3em;
+    border-radius: 15%;
+}
+.ifPageReloaded:hover {
+    color: rgb(72, 255, 0);
+    opacity: 1;
 }

@@ -1,178 +1,435 @@
-.mainBlock {
+.contentMainBlock {
     height: 100%;
 }
-.changePageBlock {
+.paginationBlock {
+    display: inline-block;
     text-align: center;
-    margin: 10px 10.9% 0px 10px;
+    width: 100%;
 }
+    .paginationButtons {
+        margin: 0em 0.3em 0em 0.2em;
+        padding: 0.1em 0.1em 0em 0.1em;
+        background-color: rgb(73, 75, 73);
+        color: rgb(151, 151, 151);
+        font-size: 1em;
+        width: 2em;
+        height: 1.7em;
+        border-radius: 25%;
+        outline: none;
+        border: 0.1em solid grey
+    }
+        .paginationButtons:hover {
+            background-color: rgb(8, 153, 8);
+            color: rgb(236, 236, 10);
+        }
+        .paginationButtons:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+        .paginationButtons:disabled {
+            background-color: rgb(168, 168, 168);
+            color: honeydew;
+            opacity: 0.3;
+            border: 0.12em solid rgb(121, 121, 121);
+        }
+    .selectedButton {
+        margin: 0em 0.3em 0em 0.2em;
+        padding: 0.1em 0.01em 0em 0.01em;
+        background-image: url(../assets/bgPokemonsHover.bmp);
+        background-size: 3.9em;
+        color: rgb(250, 233, 0);
+        font-size: 1em;
+        width: 1.9em;
+        height: 1.7em;
+        border-radius: 15%;
+        box-shadow: 0em 0em 0.4em 0.1em white;
+        border: 0.02em solid grey
+    }
+    .inotherPageText {
+        display: block;
+        font-size: 1em;
+        color:rgb(92, 99, 10);
+        opacity: 0.9;
+        margin: 1em 0em 1.2em 0em;
+    }
+    .pageBtnsFirstLast {
+        margin: 0em 0.2em 0em 0.05em;
+        padding: 0em 0em 0em 0em;
+        width: 2.5em;
+        height: 1.38em;
+        font-size: 0.8em;
+        background-color: rgb(73, 75, 73);
+        color: rgb(241, 180, 88);
+        border-radius: 15%;
+        opacity: 0.8;
+        outline: none;
+        border: 0.1em solid grey
+    }
+        .pageBtnsFirstLast:hover {
+            background-color: rgb(12, 104, 0);
+            color: rgb(255, 238, 0);
+            opacity: 1;
+        }
+        .pageBtnsFirstLast:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+            .pageBtnsFirstLast:disabled {
+                opacity: 0.3;
+            }
+            .pageBtnsFirstLast:disabled:hover {
+                background-color: rgb(168, 168, 168);
+                color: honeydew;
+                opacity: 0.3;
+                border: 0.12em solid rgb(121, 121, 121);
+            }
+    .btnsNextPrev {
+        margin: 0em 0.4em 0em 0.3em;
+        padding: 0em 0em 0.1em 0em;
+        width: 4em;
+        height: 1.6em;
+        font-size: 0.9em;
+        background-color: rgb(73, 75, 73);
+        color: rgb(167, 166, 166);
+        border-radius: 15%;
+        opacity: 0.8;
+        outline: none;
+        border: 0.1em solid grey
+    }
+        .btnsNextPrev:hover {
+            background-color: rgb(12, 104, 0);
+            color: rgb(255, 238, 0);
+            opacity: 1;
+        }
+        .btnsNextPrev:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+            .btnsNextPrev:disabled {
+                opacity: 0.3;
+            }
+            .btnsNextPrev:disabled:hover {
+                background-color: rgb(168, 168, 168);
+                color: honeydew;
+                opacity: 0.3;
+                border: 0.12em solid rgb(121, 121, 121);
+            }
 .changePageSizeBlock {
     text-align: center;
-    margin: 10px 0px 0px 0px;
+    margin: 1em 0em 1em 0em;
 }
-.setTypeBlock {
-    text-align: center;
-    margin: 10px 0px 10px 0px
-}
-.searchTypeText {
-    font-size: 20px;
-    color:rgb(92, 99, 0);
-    opacity: 1;
-}
-.selectType {
-    background-color: rgb(62, 80, 57);
-    color: rgb(204, 204, 204);
-    height: 40px;
-    width: 150px;
-    font-size: 19px;
-    margin: 15px 5px 5px 5px;
-    border: 1px solid white ;
-    border-radius: 10%;
-    opacity: 0.9;
-}
-    .selectType:hover {
-        background-color: rgb(62, 80, 57);
-        color: rgb(255, 255, 254);
-        border: 1px solid white ;
-        opacity: 1;
+    .pokPerPageText {
+        font-size: 1em;
+        color:rgb(92, 99, 0);
+        opacity: 0.9;
+        margin: 0em 0.7em 0em 0em;
     }
-.optionTypeAll {
-    color:rgb(255, 255, 254);
-}
-.optionTypeFighting {
-    color:rgb(253, 46, 46);
-}
-.optionTypeIce {
-    color:rgb(162, 230, 226);
-}
-.optionTypeDark {
-    color:rgb(3, 3, 3);
-}
-.optionTypeGround {
-    color:rgb(59, 55, 11);
-}
-.optionTypeGhost {
-    color:rgb(83, 0, 131);
-}
-.optionTypeDragon {
-    color:rgb(40, 0, 185);
-}
-.optionTypeRock {
-    color:rgb(110, 110, 110);
-}
-.optionTypeSteel {
-    color:rgb(204, 204, 165);
-}
-
-.inotherPageText {
-    font-size: 20px;
-    color:rgb(92, 99, 10);
-    opacity: 0.9;
-}
-.pokAtMomentText {
-    font-size: 20px;
-    color:rgb(92, 99, 0);
-    opacity: 0.9;
-}
-.pokAtMomentNumber {
-    font-size: 30px;
-    color: rgb(65, 103, 207);
-    font-weight: 600;
-    margin-left: 5px;
-}
-.changePageButtons {
-    margin: 10px 20px 0px 20px;
-    width: 180px;
-    height: 40px;
-    font-size: 20px;
-    background-color: rgb(168, 168, 168);
-    color: honeydew;
-    border-radius: 12%;
-    opacity: 0.8;
-}
-    .changePageButtons:hover {
-        background-color: rgb(12, 104, 0);
-        color: rgb(255, 238, 0);
-        opacity: 1;
-        border: 1px solid rgb(255, 255, 255);
+    .pokAtMomentText {
+        font-size: 1em;
+        color:rgb(92, 99, 0);
+        opacity: 0.9;
+        margin-left: 1em;
     }
-    .changePageButtons:active {
-        background-color: rgb(110, 166, 238);
-        color: rgb(119, 45, 45);
-        opacity: 0.5;
+    .pokAtMomentNumber {
+        display: inline-block;
+        width: 1em;
+        font-size: 2.2em;
+        color: rgb(65, 103, 207);
+        font-weight: 600;
     }
-.changePageSizeBlock {
-    text-align: center;
-}
-.changeSizeButtons {
-    padding: 1px 2px 1px 1px;
-    margin: 20px 10px 5px 10px;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    background-color: dimgrey;
-    color: rgb(187, 187, 187);
-    border-radius: 10%;
-    opacity: 0.8;
-}
-    .changeSizeButtons:hover {
-        background-color: rgb(11, 88, 1);
+    .changePSizeBtns {
+        margin: 1em 0.3em 0em 0.1em;
+        padding: 0em 0.01em 0em 0em;
+        width: 1.6em;
+        height: 1.2em;
+        font-size: 1.3em;
+        background-color: dimgrey;
+        color: rgb(206, 205, 205);
+        border-radius: 10%;
+        opacity: 0.8;
+        outline: none;
+        border: 0.01em solid grey
+    }
+        .changePSizeBtns:hover {
+            background-color: rgb(11, 88, 1);
+            color: rgb(255, 251, 0);
+            opacity: 1;
+            border: 0.01em solid rgb(255, 255, 255);
+        }
+        .changePSizeBtns:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+        .changePSizeBtns:disabled {
+            opacity: 0.3;
+        }
+        .changePSizeBtns:disabled:hover {
+            opacity: 0.3;
+            border: 0.1em solid rgb(94, 94, 94);
+            background-color: rgb(104, 104, 104);
+            color: rgb(121, 121, 120);
+        }
+    .changePSizeBtnsActive {
+        margin: 1em 0.3em 0em 0.11em;
+        width: 1.9em;
+        height: 1.3em;
+        font-size: 1.4em;
+        background-image: url(../assets/bgPokemonsHover.bmp);
+        background-size: 3.3em;
         color: rgb(255, 251, 0);
+        border-radius: 15%;
+        box-shadow: 0em 0em 0.6em 0.2em white;
+        border: 0.01em solid grey
+    }
+.searchingBlock {
+    text-align: center;
+    margin: 0.1em 0em 0em 0em;
+}
+.searchByTextBlock {
+    display: inline;
+}
+    .searchByNameText {
+        font-size: 1em;
+        color:rgb(92, 99, 0);
         opacity: 1;
-        border: 1px solid rgb(255, 255, 255);
+        margin-right: 1em;
     }
-    .changeSizeButtons:active {
-        background-color: rgb(110, 166, 238);
-        color: rgb(119, 45, 45);
-        opacity: 0.5;
+    .inputSearch {
+        background-color: rgb(134, 134, 136);
+        color: white;
+        margin: 0em 0.3em 0.8em 0.2em;
+        padding: 0.35em 0em 0.25em 1em ;
+        height: 1.3em;
+        border-radius: 3%;
+        font-size: 1.1em;
+        outline: none;
+        border: 0.1em solid grey
     }
+        .inputSearch:hover {
+            background-color:rgb(9, 117, 14);
+            color: rgb(235, 235, 235);
+        }
+    .buttonSearch {
+            background-color: rgb(88, 88, 88);
+            color: white;
+            font-size: 1.1em;
+            border-radius: 15%;
+            margin-left: 0.5em;
+            outline: none;
+            opacity: 0.8;
+            border: 0.1em solid grey
+        }
+        .buttonSearch:hover {
+            background-color: rgb(11, 88, 1);
+            color: rgb(255, 251, 0);
+            opacity: 1;
+        }
+        .buttonSearch:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+    .buttonReload {
+        width: 4em;
+        height: 2.5em;
+        font-size: 1.2em;
+        font-weight: 400;
+        background-image: url(../assets/backBluSpase.gif);
+        background-size: 8em;
+        background-position-x: 4.5em;
+        background-position-y: -5em;
+        color: rgba(122, 111, 9, 0.836);
+        margin-left: 1em;
+        padding: 0.07em 0em 0em 0em;
+        border-radius: 50%;
+        outline: none;
+        opacity: 0.7;
+        border: none;
+        box-shadow: 0em 0em 0.15em 0.2em grey;
+    }
+        .buttonReload:hover {
+            color: rgb(255, 123, 0);
+            box-shadow: 0em 0em 0.5em 0.4em rgb(141, 141, 141);
+            font-weight: 600;
+            opacity: 0.85;
+        }
+        .buttonReload:active {
+            color: rgb(94, 255, 0);
+            font-weight: 600;
+            opacity: 1;
+            outline: none;
+            box-shadow: 0em 0em 0.5em 0.2em rgb(255, 255, 255);
+        }
 
+    .searchByTypeText {
+        font-size: 1em;
+        color:rgb(92, 99, 0);
+        margin-left: 1em;
+        opacity: 1;
+    }
+    .selectType {
+        background-color: rgb(62, 80, 57);
+        color: rgb(204, 204, 204);
+        height: 2.3em;
+        width: 8em;
+        font-size: 1em;
+        margin: 1em 0.4em 0.4em 0.4em;
+        padding: 0em 0em 0em 0em;
+        border: 0.1em solid grey;
+        border-radius: 10%;
+        opacity: 0.9;
+        outline: none;
+    }
+        .selectType:hover {
+            background-color: rgb(74, 99, 67);
+            color: rgb(255, 255, 254);
+            opacity: 1;
+        }
+            .optionTypeAll {
+                color:rgb(255, 255, 254);
+            }
+            .optionTypeFighting {
+                color:rgb(253, 46, 46);
+            }
+            .optionTypeIce {
+                color:rgb(162, 230, 226);
+            }
+            .optionTypeDark {
+                color:rgb(3, 3, 3);
+            }
+            .optionTypeGround {
+                color:rgb(59, 55, 11);
+            }
+            .optionTypeGhost {
+                color:rgb(83, 0, 131);
+            }
+            .optionTypeDragon {
+                color:rgb(40, 0, 185);
+            }
+            .optionTypeRock {
+                color:rgb(110, 110, 110);
+            }
+            .optionTypeSteel {
+                color:rgb(204, 204, 165);
+            }
+            .optionTypeBug {
+                color:rgb(138, 132, 54);
+            }
+            .optionTypeFire {
+                color:rgb(255, 94, 0);
+            }
+            .optionTypePoison {
+                color:rgb(179, 255, 0);
+            }
+            .optionTypeGrass {
+                color:rgb(66, 202, 89);
+            }
+    .clearSearchButton {
+        background-color: rgb(139, 139, 139);
+        color: white;
+        font-size: 1.2em;
+        border-radius: 50%;
+        margin-left: 0.4em;
+        padding-top: 0.12em;
+        outline: none;
+        opacity: 0.8;
+        border: 0.08em solid grey
+    }
+        .clearSearchButton:hover {
+            background-color: rgb(11, 88, 1);
+            color: rgb(255, 251, 0);
+            opacity: 1;
+            border: 0.1em solid unset
+        }
+        .clearSearchButton:active {
+            background-color: rgb(110, 166, 238);
+            color: rgb(119, 45, 45);
+            opacity: 0.5;
+            outline: none;
+        }
+.errorNoResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 9em;
+    margin: 4%;
+    color: rgb(207, 102, 40);
+    background-image: url(../assets/backPoksNotFound.bmp);
+    background-size: 45em 10em;
+    background-position-x: -10em;
+    font-size: 3em;
+    border-radius: 15%;
+}
+      
 .loadedPokemonsBlock {
     display: inline-block;
     text-align: center;
-    background-image: url('https://img.freepik.com/free-photo/room-with-concrete-floor-and-smoke-background_9083-2991.jpg?size=626&ext=jpg');
-    margin: 2%;
-    width: 16%;
-    height: 40vh;
+    background-image: url(../assets/bgPokemons.bmp);
+    background-size: 36em;
+    margin: 1.9em;
+    width: 16.6em;
+    height: 24em;
     border-radius: 15%;
     box-shadow: 1px 1px 10px 10px white;
-    opacity: 0.85;
+    opacity: 0.93;
 }
     .loadedPokemonsBlock:hover {
-        background-image: url('https://newcastlebeach.org/images/background-image-css-7.jpg');
+        background-image: url(../assets/backVioletHoleSpace.gif);
+        background-size: 37em;
+        background-position-x: -10.5em;
+        background-position-y: -13em;
         border-radius: 17%;
-        box-shadow: 1px 1px 50px 20px rgb(83, 223, 204);
+        box-shadow: 0em 0em 2.5em 2em rgba(100, 3, 255, 0.616);
         opacity: 1;
-
     }
 .pIcon {
-    height: 55%;
-    width: 70%;
+    height: 11em;
+    width: 14em;
+    border-radius: 30%;
 }
-.pokemonsInfoValues {
-    margin: 1px;
+
+.textName {
+    color: green;
+    font-size: 1em;
 }
 .pokemonsStats1 {
-    color: rgb(223, 173, 35);
+    color: rgb(255, 217, 0);
+    font-size: 1.5em;
 }
 .pokemonsStats2 {
-    color:rgb(185, 110, 20);
-    margin-top: 1px;
+    color:rgb(245, 135, 0);
+    margin-top: 0.1em;
+    font-size: 1.2em;
 }
 .pokemonsStats3 {
-    color:rgb(155, 100, 20);
-    margin-top: 1px;
+    color:rgb(172, 97, 0);
+    margin-top: 0.1em;
+    font-size: 1.2em;
 }
 .pokemonsStats4 {
-    color:rgb(122, 100, 20);
-    margin-top: 1px;
+    color:rgb(117, 53, 0);
+    margin-top: 0.1em;
+    font-size: 1.2em;
 }
 .pTypes {
     display: inline-block;
-    background-color: rgb(202, 204, 93);
-    color: rgb(0, 81, 255);
-    margin: 5px 8px 11px 15px;
-    font-size: 20px;
-    height: 9%;
-    width: 30%;
+    background-image: url(../assets/backgroundType.bpm);
+    background-size: 3.1em;
+    color: rgb(0, 215, 253);
+    margin: 0.5em 0.5em 0.8em 0.5em;
+    padding: 0.2em 0em 0em 0em;
+    font-size: 1.3em;
+    height: 1.7em;
+    width: 4em;
     border-radius: 25%;
 }

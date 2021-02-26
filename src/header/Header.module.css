@@ -1,17 +1,21 @@
 .mainBlock {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EJgZG_IZCozOM71_RzVYYfBq8xhomAOuyw&usqp=CAU') ;
-    border-bottom: rgb(221, 177, 0) 3px solid;
+    background-image: url(../assets/headerBackground.bmp);
+    background-size: 25em;
+    border-bottom: rgb(221, 177, 0) 0.1em solid;
     text-align: center;
 }
 .headerName {
     color:rgb(255, 177, 0);
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 600;
-    padding: 5px;
+    padding: 0.15em;
 }
 .headerName:hover {
     color:rgb(204, 27, 27);
+}
+.headerName:active {
+    color:rgb(46, 196, 26);
 }
 a {
     text-decoration: none;
